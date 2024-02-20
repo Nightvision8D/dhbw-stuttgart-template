@@ -1,19 +1,15 @@
-%!TEX root = ../main.tex
 
 \begin{titlepage}
-%% DHBW_Logo
 \begin{tikzpicture}[remember picture, overlay]
 	\node[anchor=north east,inner xsep=50pt, inner ysep=25pt] at (current page.north east)
-	{\includegraphics[height=2cm]{resources/images/logo-dhbw}};
+	{\includegraphics[height=1.5cm]{resources/images/logo-dhbw}};
 \end{tikzpicture}
 
-%% Firmen Logo
-\ifDocType{T3\_3100}{%
-	% kein Logo bei T3100
-}{%
+\ifDocType{T3\_3100}{
+}{
 	\begin{tikzpicture}[remember picture, overlay]
 		\node[anchor=north west,inner xsep=50pt, inner ysep=25pt] at (current page.north west)
-		{\includegraphics[height=2cm]{resources/images/logo-company}};
+		{\includegraphics[height=1.4  cm]{resources/images/logo-company}};
 	\end{tikzpicture}
 }
 
